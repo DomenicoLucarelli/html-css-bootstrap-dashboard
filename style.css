@@ -31,9 +31,14 @@ nav .items .element img{
 }
 
 .my-ext-container aside{
-    width: 120px;
-    height: 100%;
-    background-color: blue;
+    max-width: 120px;
+    width: 100%;
+    background-image: url("img/sidebar-bg.png");
+    background-color: #0e263c;
+}
+
+.my-ext-container aside .my-row{
+    font-size: 14px;
 }
 
 .my-inner-container{
@@ -43,7 +48,7 @@ nav .items .element img{
 }
 
 .my-inner-container header{
-    background-color: green;
+    background-color: #1b72e8;
     min-height: 80px;
 }
 
