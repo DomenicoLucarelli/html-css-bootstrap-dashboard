@@ -1,0 +1,31 @@
+nav{
+    height: 60px;
+    background-color: red;
+}
+
+.my-ext-container{
+    height: calc(100vh - 60px);
+    
+}
+
+.my-ext-container aside{
+    width: 120px;
+    height: 100%;
+    background-color: blue;
+}
+
+.my-inner-container{
+    
+    height: 100%;
+    width: 100%;
+}
+
+.my-inner-container header{
+    background-color: green;
+    min-height: 80px;
+}
+
+.my-fluid-container{
+    height: calc(100% - 80px);
+    background-color: brown;
+}
