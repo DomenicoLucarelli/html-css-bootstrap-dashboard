@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <nav class="d-flex align-items-center gap-2 px-2">
+    <nav class="my-nav d-flex align-items-center gap-2 px-2">
         <div class="img ">
             <img src="img/logo.svg" alt="">
         </div>
@@ -108,10 +108,323 @@
 
         <div class="my-inner-container">
 
-            <header></header>
+            <header class="pt-1">
+                <div class="container-fluid text-white ">
+
+                    <div class="row  ">
+                        <div class="col-6  d-flex flex-column ">
+                            <div class="header-up-left d-flex gap-2 align-items-baseline">
+                                <h4 >Boolean</h4>
+                                <span>Piano Blaze</span>
+                            </div>
+
+                            <div class="header-lower-left">
+                                <div style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                                    <ol class="breadcrumb d-flex gap-1 mb-0">
+                                      <li class="breadcrumb-item">3 app</li>
+                                      <li style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"></li>></li>
+                                      <li class="breadcrumb-item d-md-inline-block d-none ">Boolean mobile app</li>
+                                      <li class="breadcrumb-item d-md-inline-block d-none">Boolean web app</li>
+                                      <li class="breadcrumb-item d-md-inline-block d-none ">Boolean blog app</li>
+
+                                    </ol>
+                                </div>
+                            </div>                    
+                        </div>
+                        <div class="col-4  d-flex flex-column pt-3">
+                            <span>Studenti online negli ultimi 30 minuti</span>
+                            <span class="fs-3 fw-bold">125</span>
+                        </div>
+                        <div class="col-2 pt-2">
+
+                            <span>Nuovo studente</span>
+
+                            <button class=" my-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span>+</span></button>
+
+                            <div class="offcanvas offcanvas-end offcanvas-size-xl" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body ">
+
+                                  <div class="row row-cols-2 gy-2">
+                                        <div class="col">
+                                            <label for="inputnome" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="inputnome">
+
+                                        </div>
+                                        <div class="col">
+
+                                            <label for="inputcognome" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="inputcognome">
+                                        </div>
+                                        <div class="col">
+                                            
+                                            <label class="form-label" for="autoSizingInputGroup">Email</label>
+                                            <div class="input-group">
+                                              <div class="input-group-text">@</div>
+                                              <input type="email" class="form-control" id="autoSizingInputGroup" >
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col">
+                                            <label for="inputpassword" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputpassword">
+                                        </div>
+                                  </div>
+
+                                  <label for="inputindirizzo" class="form-label pt-2">Indirizzo</label>
+                                  <input type="text" class="form-control " id="inputindirizzo">
+
+                                  <div class="row pt-2">
+                                        <div class="col-6">
+                                            <label for="inputcitta" class="form-label pt-2">Città</label>
+                                            <input type="text" class="form-control " id="inputcitta">
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="inputstato"  class="form-label pt-2">Stato </label>
+                                            <select class="form-select" aria-label="Default select example" id="inputstato">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-2">
+                                            <label for="inputcap" class="form-label pt-2">CAP</label>
+                                            <input type="text" class="form-control " id="inputcap">
+                                        </div>
+                                  </div>
+
+                                  <div class="input-group pt-2">
+                                    <button class="btn my-offcanvas-btn" type="button" id="button-addon1">Scegli file</button>
+                                    <input type="text" class="form-control" placeholder="Nessun file selezionato" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                  </div>
+
+                                  <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Seleziona per proseguire
+                                    </label>
+                                  </div>
+
+                                  
+                                  
+                                  <button type="button" class="btn btn-primary mt-2">Salva</button>
+                                  <button type="button" class="btn btn-warning mt-2">Svuota</button>
+
+
+                              
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+            </header>
             
-            <div class="container-fluid my-fluid-container">
-    
+            <div class="container-fluid my-fluid-container py-2 overflow-auto">
+                <div class="row row-cols-sm-1">
+
+                    <div class="col-md-8">
+
+                       <div class="row row-cols-1">
+
+                            <div class="col">
+                                <div class="card">
+
+                                    <div class="card-header">
+                                      <h5 class="fw-semibold">Prossime classi</h5>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <table class="table my-table">
+                                            <thead>
+                                              <tr>
+                                                <th style="width: 50%;" >Nome</th>
+                                                <th >Data di inizio</th>
+                                                <th >ROI</th>
+                                                <th >Stato</th>
+                                                <th >Azioni</th>
+
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td style="width: 50%;"> <img class="img-fluid" src="img/class-avatar.jpg " alt=""> Classe 75</td>
+                                                <td>15 febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="green">Done</span> </td>
+                                                <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                              </tr>
+
+                                              <tr>
+                                                <td style="width: 50%;"> <img class="img-fluid" src="img/class-avatar.jpg " alt=""> Classe 76</td>
+                                                <td>16 febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="green">Done</span> </td>
+                                                <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                              </tr>
+
+                                              <tr>
+                                                <td style="width: 50%;"> <img class="img-fluid" src="img/class-avatar.jpg " alt=""> Classe 77</td>
+                                                <td>17 febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="yellow">Done</span> </td>
+                                                <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                              </tr>
+
+                                              <tr>
+                                                <td style="width: 50%;"> <img class="img-fluid" src="img/class-avatar.jpg " alt=""> Classe 76</td>
+                                                <td>16 febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="green">Done</span> </td>
+                                                <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                              </tr>
+
+                                              <tr>
+                                                <td style="width: 50%;"> <img class="img-fluid" src="img/class-avatar.jpg " alt=""> Classe 76</td>
+                                                <td>16 febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="red">Done</span> </td>
+                                                <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                              </tr>
+
+                                              <tr>
+                                                <td style="width: 50%;"> <img class="img-fluid" src="img/class-avatar.jpg " alt=""> Classe 76</td>
+                                                <td>16 febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="green">Done</span> </td>
+                                                <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                              </tr>
+
+                                              <tr>
+                                                <td style="width: 50%;"> <img class="img-fluid" src="img/class-avatar.jpg " alt=""> Classe 76</td>
+                                                <td>16 febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="red">Done</span> </td>
+                                                <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                              </tr>
+
+                                              <tr>
+                                                <td style="width: 50%;"> <img class="img-fluid" src="img/class-avatar.jpg " alt=""> Classe 76</td>
+                                                <td>16 febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="green">Done</span> </td>
+                                                <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                              </tr>
+
+                                              
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col pt-2">
+                                <div class="card">
+
+                                    <div class="card-header">
+                                      <h5 class="fw-semibold">FAQ</h5>
+                                    </div>
+        
+                                    <div class="card-body">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                  Come aggiungere un nuovo studente?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  Uccidetemi sto impazzendo
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Uccidetemi sto impazzendo
+                                                  
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Posso usare questa dashboard da mobile?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  Uccidetemi sto impazzendo
+
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                       </div>
+                    </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row row-cols-1">
+                            <div class="col pt-2">
+                                <div class="card">
+
+                                    <div class="card-header">
+                                      <h5 class="fw-semibold">Todo</h5>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="card-body-items border rounded-top-2 px-2 py-1">
+                                            <input type="checkbox"> <span> kickoff nuove classi</span>
+                                        </div>
+                                        <div class="card-body-items border  px-2 py-1">
+                                            <input type="checkbox"> <span> kickoff nuove classi</span>
+
+                                        </div>
+                                        <div class="card-body-items border rounded-bottom-2  px-2 py-1">
+                                            <input type="checkbox"> <span> kickoff nuove classi</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col pt-2">
+                                <div class="card " >
+                                    <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h6 class="card-title">Utenti Attivi</h6>
+                                      <p class="card-text my-card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">Gennaio 1200</li>
+                                      <li class="list-group-item">Febbraio 800</li>
+                                      <li class="list-group-item">Marzo 1500</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Visualizza report approfomdito</a>
+                                      
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
