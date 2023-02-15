@@ -1,6 +1,28 @@
 nav{
     height: 60px;
-    background-color: red;
+    
+}
+
+nav .search-bar {
+    background-color: #e5e5e5;
+    padding: 4px ;
+    border-radius: 4px;
+    color: #767676;
+}
+
+
+
+
+nav .items .element{
+    font-size: 18px;
+}
+
+nav .items .element:last-child{
+    color: #f98c00;
+}
+
+nav .items .element img{
+    vertical-align: unset;
 }
 
 .my-ext-container{
@@ -29,3 +51,4 @@ nav{
     height: calc(100% - 80px);
     background-color: brown;
 }
+
