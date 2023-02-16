@@ -88,7 +88,7 @@
     min-height: 80px;
 }
 
-header .row .col-6 span , .breadcrumb-item{
+header .row .col-md-5 span , .breadcrumb-item{
     font-size: 12px;
     padding: 1px 5px ; 
 
