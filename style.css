@@ -44,8 +44,30 @@
     background-color: #0e263c;
 }
 
+@media screen and (min-width:0 ) and (max-width:767px){
+    .my-ext-container aside{
+        max-width: 60px;
+    }
+    .upper-aside{
+        align-items: center;
+    }
+
+    .lower-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
+
 .my-ext-container aside .my-row{
     font-size: 14px;
+    cursor: pointer;
+}
+
+.my-ext-container aside .my-row:hover{
+    background-color: #828f98;
+    padding: 2px 8px
 }
 
 .my-inner-container{
@@ -75,7 +97,7 @@ header .col-4 span:first-child , header .col-2 span {
     font-size: 12px 
 }
 
-header .col-2 .my-btn{
+header .col-md-3 .my-btn{
     border: 1px solid white;
     color: white;
     
@@ -94,8 +116,14 @@ header .col-2 .my-btn span{
 
 
 .my-fluid-container{
-    height: calc(100% - 80px);
+    height: calc(100% - 100px);
     background-color: #f8f9fa;
+}
+
+@media  screen and (max-width:576px){
+    .my-fluid-container{
+        height: calc(100% - 153px);
+    }
 }
 
  td img {
@@ -144,6 +172,18 @@ td i{
     --bs-offcanvas-width: max(50vw) !important;
 }
 
+@media screen and (min-width:0 ) and (max-width:767px){
+    .offcanvas-size-xl{
+        --bs-offcanvas-width: max(100vw) !important;
+    }
+}
+
 .my-offcanvas-btn{
     background-color: #eaedf2;
+}
+
+@media screen and (max-width:576px){
+    .disappear{
+        display: none;
+    }
 }
