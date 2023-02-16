@@ -23,8 +23,15 @@
     font-size: 18px;
 }
 
-.my-nav .items .element:last-child{
+
+
+.element.dropdown .my-btn{
+    padding: 0;
+    vertical-align: unset;
+    font-size: inherit;
     color: #f98c00;
+    border: none;
+    background-color: transparent;
 }
 
 .my-nav .items .element img{
